@@ -1,0 +1,9 @@
+/*
+Write a function that takes an array of weapon names as input and returns a new array
+where the first weapon is moved to the end of the array. You must use both `shift` 
+and `push` methods to achieve this.
+
+Example:
+Input: ["Lancer", "Gnasher", "Boomshot", "Torque Bow"]
+Output: ["Gnasher", "Boomshot"]()
+*/
