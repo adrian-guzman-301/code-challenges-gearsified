@@ -1,0 +1,21 @@
+/*
+Challenge 1 — Move a Specific Weapon to the End
+Write a function that takes an array of weapon names and a weapon as input.
+The function should remove the first occurrence of that weapon from the array
+and then add it to the end of the array. You must use both `shift` and `push` methods
+to achieve this.
+
+Example:
+Input: ["Lancer", "Gnasher", "Boomshot", "Torque Bow"], item: "Gnasher"
+Output: ["Lancer", "Boomshot", "Torque Bow", "Gnasher"]
+*/
+
+/*
+Challenge 2 — Remove Duplicate Weapons
+Write a function that takes an array of weapon names as input and returns a new array
+with all duplicate weapons removed. You must use `reduce` and `push` methods to achieve this.
+
+Example:
+Input: ["Lancer", "Gnasher", "Boomshot", "Lancer", "Torque Bow", "Gnasher"]
+Output: ["Lancer", "Gnasher", "Boomshot", "Torque Bow"]
+*/
