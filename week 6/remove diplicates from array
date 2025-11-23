@@ -1,0 +1,38 @@
+# 🔫 Gears of War 1 Multiplayer — Removing Duplicate Player Stats
+
+/*
+Write a JavaScript function that takes an array of player stat entries as input
+and returns a new array with all duplicate entries removed. Use the Set object
+to achieve this.
+
+Example Player Stats to Track:
+- killCount
+- deathCount
+- headshots
+- gnasherKills
+- explosiveKills
+- activeReloadBoost (true/false)
+- jammedWeapon (true/false)
+- spawnLocation (1-4)
+- enemyExecutions
+*/
+
+function removeDuplicates(arr) {}
+
+/* Example: Array of kills by a player in a match (with some duplicates) */
+const killLog = [
+  { killCount: 1, deathCount: 0, headshots: 1, gnasherKills: 0, explosiveKills: 0, activeReloadBoost: true, jammedWeapon: false, spawnLocation: 1, enemyExecutions: 0 },
+  { killCount: 2, deathCount: 0, headshots: 1, gnasherKills: 1, explosiveKills: 0, activeReloadBoost: false, jammedWeapon: false, spawnLocation: 1, enemyExecutions: 0 },
+  { killCount: 2, deathCount: 0, headshots: 1, gnasherKills: 1, explosiveKills: 0, activeReloadBoost: false, jammedWeapon: false, spawnLocation: 1, enemyExecutions: 0 },
+  { killCount: 3, deathCount: 1, headshots: 2, gnasherKills: 1, explosiveKills: 1, activeReloadBoost: true, jammedWeapon: false, spawnLocation: 2, enemyExecutions: 1 },
+];
+
+console.log(removeDuplicates(killLog));
+
+/*
+Gameplay Mechanic Lens:
+- Each object represents a player’s stats for a round or a segment of a match.
+- Using Set to remove duplicates is like ignoring repeated identical actions in your match log.
+- Stats like headshots, gnasher kills, and explosive kills can have duplicates if multiple rounds are logged, and we want unique entries.
+- Useful for creating a clean scoreboard or analyzing unique player performances.
+*/
