@@ -1,0 +1,20 @@
+/*
+Challenge 1 — Reverse Weapon Loadout
+Write a function that takes an array of weapon names as input and returns a new array
+with the weapons in reverse order. You must use both `push` and `pop` methods to achieve this.
+
+Example:
+Input: ["Lancer", "Gnasher", "Boomshot", "Torque Bow"]
+Output: ["Torque Bow", "Boomshot", "Gnasher", "Lancer"]
+*/
+
+/*
+Challenge 2 — Rotate First N Weapons to the End
+Write a function that takes an array of weapon names and a number n as input.
+The function should return a new array where the first n weapons are moved to the end
+of the array. You must use both `shift` and `push` methods to achieve this.
+
+Example:
+Input: ["Lancer", "Gnasher", "Boomshot", "Torque Bow", "Snub"], n = 2
+Output: ["Boomshot", "Torque Bow", "Snub", "Lancer", "Gnasher"]
+*/
