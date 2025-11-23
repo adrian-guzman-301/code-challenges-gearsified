@@ -1,0 +1,40 @@
+# 🔫 Gears of War 1 Multiplayer — Combining Player Stat Logs
+
+/*
+Write a JavaScript function that takes two arrays of player stat entries as input
+and returns a new array containing all entries from both arrays. Use the spread
+operator (...) to achieve this.
+
+Example Player Stats to Track:
+- killCount
+- deathCount
+- headshots
+- gnasherKills
+- explosiveKills
+- activeReloadBoost (true/false)
+- jammedWeapon (true/false)
+- spawnLocation (1-4)
+- enemyExecutions
+*/
+
+function combineArrays(arr1, arr2) {}
+
+/* Example: Two segments of a match for a player */
+const round1Stats = [
+  { killCount: 2, deathCount: 0, headshots: 1, gnasherKills: 1, explosiveKills: 0, activeReloadBoost: true, jammedWeapon: false, spawnLocation: 1, enemyExecutions: 0 },
+  { killCount: 3, deathCount: 1, headshots: 2, gnasherKills: 1, explosiveKills: 1, activeReloadBoost: false, jammedWeapon: false, spawnLocation: 2, enemyExecutions: 1 }
+];
+
+const round2Stats = [
+  { killCount: 1, deathCount: 0, headshots: 0, gnasherKills: 1, explosiveKills: 0, activeReloadBoost: true, jammedWeapon: false, spawnLocation: 3, enemyExecutions: 0 },
+  { killCount: 2, deathCount: 1, headshots: 1, gnasherKills: 0, explosiveKills: 1, activeReloadBoost: false, jammedWeapon: false, spawnLocation: 4, enemyExecutions: 0 }
+];
+
+console.log(combineArrays(round1Stats, round2Stats));
+
+/*
+Gameplay Mechanic Lens:
+- Each object represents a player's stats during a segment of a PvP match.
+- Using the spread operator combines separate rounds of stats into a single unified match log.
+- Useful for analyzing full match performance, like total kills, deaths, headshots, gnasher kills, or tracking how many rounds had active reload boosts.
+*/
