@@ -1,0 +1,30 @@
+/*
+Task 1
+Add a property to each weapon storing its abbreviation (initials) and calculate the sum 
+of all ammo counts to use in the calculation of the average ammo per weapon. 
+Average ammo = total ammo ÷ number of weapons.
+
+Task 2
+Get an array of all weapons with ammo higher than the average ammo.
+
+Task 3
+Get an array of strings listing the weapon initials and ammo.
+Expected output (Weapons Example): [ 'LN: 35', 'GS: 45', 'AE: 38', 'IH: 46' ]
+
+Bonus
+How you can work programmatically using a function.
+*/
+
+// A list of weapons stored as an array of objects
+const weaponLoadout = [
+  { name: "Lancer", ammo: 27 },
+  { name: "Gnasher", ammo: 35 },
+  { name: "Boomshot", ammo: 22 },
+  { name: "Torque Bow", ammo: 29 },
+  { name: "Snub", ammo: 29 },
+  { name: "Hammerburst", ammo: 45 },
+  { name: "Retro Lancer", ammo: 38 },
+  { name: "Markza", ammo: 46 },
+  { name: "Boltok", ammo: 21 },
+  { name: "Longshot", ammo: 31 }
+];
