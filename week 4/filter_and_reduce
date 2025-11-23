@@ -1,0 +1,46 @@
+/*
+Task 1 - Using filter to Extract Specific Weapons
+Write a JavaScript function that uses the filter method to extract all weapons 
+with ammo greater than 10 from an array.
+
+const weaponAmmo = [
+  { name: 'Lancer', ammo: 5 },
+  { name: 'Gnasher', ammo: 10 },
+  { name: 'Boomshot', ammo: 12 },
+  { name: 'Torque Bow', ammo: 3 },
+  { name: 'Snub', ammo: 18 },
+  { name: 'Hammerburst', ammo: 130 },
+  { name: 'Retro Lancer', ammo: 44 }
+];
+
+Task 2 - Using reduce to Calculate Total Ammo
+Write a JavaScript function that uses the reduce method to calculate the total ammo
+across all weapons in an array.
+
+function sumAmmo(){}
+
+Task 3 - Create an Array of Unique Weapon Categories (reduce)
+Extract unique weapon categories from a list of weapons.
+
+const weaponList = [
+  { name: 'Lancer', category: 'Rifle' },
+  { name: 'Gnasher', category: 'Shotgun' },
+  { name: 'Boomshot', category: 'Explosive' },
+  { name: 'Torque Bow', category: 'Explosive' },
+  { name: 'Snub', category: 'Pistol' },
+  { name: 'Retro Lancer', category: 'Rifle' },
+];
+
+Task 4 - Count Weapons by Type (filter)
+Imagine you have collected data on weapons used in matches, including their type.
+You want to analyze this data to understand the distribution of weapon types.
+
+const matchWeapons = [
+  { name: 'Lancer', type: 'Rifle' },
+  { name: 'Gnasher', type: 'Shotgun' },
+  { name: 'Boomshot', type: 'Explosive' },
+  { name: 'Torque Bow', type: 'Explosive' },
+  { name: 'Snub', type: 'Pistol' },
+  { name: 'Lancer', type: 'Rifle' },
+];
+*/
