@@ -1,0 +1,48 @@
+# 🔥 Gears of War 1 Multiplayer — Sorting and Checking Locust Stats
+
+// Sorting an Array of Locust Characters by Health [Sort]
+const locusts = [
+  { name: "Drone", health: 100, dbno: false, powerWeapon: "Boomshot" },
+  { name: "Raam", health: 250, dbno: false, powerWeapon: null },
+  { name: "Hunter", health: 150, dbno: false, powerWeapon: "Torque Bow" }
+];
+
+// Example: Sort Locusts from lowest to highest health
+// locusts.sort((a, b) => a.health - b.health);
+
+/*
+Gameplay Mechanic Lens:
+- Sorting helps prioritize which enemies to target first based on their health.
+- Useful for planning power weapon grabs or defensive positioning.
+*/
+
+// Checking if Any Locust is Down But Not Out [Some]
+const locustTeam = [
+  { name: "Drone", health: 100, dbno: false },
+  { name: "Hunter", health: 150, dbno: false },
+  { name: "Raam", health: 250, dbno: false }
+];
+
+// Example: Check if any Locust is DBNO
+// const anyDbno = locustTeam.some(locust => locust.dbno);
+
+/*
+Gameplay Mechanic Lens:
+- This checks if any enemy is in DBNO, signaling an opportunity for executions or seizing power weapons.
+*/
+
+// Checking if All Locusts Have a Power Weapon [Every]
+const locustSquad = [
+  { name: "Drone", powerWeapon: "Boomshot" },
+  { name: "Raam", powerWeapon: "Torque Bow" },
+  { name: "Hunter", powerWeapon: "Lancer" }
+];
+
+// Example: Are all Locusts carrying a power weapon?
+// const allHavePower = locustSquad.every(locust => locust.powerWeapon !== null);
+
+/*
+Gameplay Mechanic Lens:
+- Determines if the enemy squad is fully armed with power weapons.
+- Helps decide whether to push aggressively, flank, or retreat based on enemy loadout.
+*/
