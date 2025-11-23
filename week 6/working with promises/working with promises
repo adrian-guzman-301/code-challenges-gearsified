@@ -1,0 +1,24 @@
+# 🔫 Gears of War — Promises & Async Tasks
+
+/* =========== Uppercase Weapon Name Promise =========== */
+
+function uppercaseWeaponName(weapon) {}
+
+/* ========== Simulated Weapon Data Fetching ========== */
+
+function fetchWeaponData() {}
+
+/* ========== Asynchronous Weapon Queue ========== */
+
+class WeaponQueue {
+  constructor() {}
+}
+
+// // Example weapon-loading task factory function
+// const createWeaponTask = () => {
+
+// };
+
+// // Create a weapon queue with a concurrency limit of 3
+
+// // Add weapon-loading tasks to the queue
