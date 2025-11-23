@@ -1,0 +1,43 @@
+# 🔥 Gears of War Multiplayer — Iterating Over Locust Stats and Loadouts
+
+// Iterating Over the Values of a Locust Character [Object.values]
+const locust1 = { name: "Drone", health: 100, dbno: false, powerWeapon: "Boomshot" };
+
+// Example: Check all stats of the Locust
+// Object.values(locust1).forEach((value) => console.log(value));
+
+/*
+Gameplay Mechanic Lens:
+- This is like surveying a Locust teammate's stats before or during a match.
+- Object.values lets you quickly see health, DBNO status, and whether they’re carrying a power weapon.
+*/
+
+// Iterating Over the Keys of a Locust Character [Object.keys]
+const locust2 = { name: "Raam", health: 250, dbno: false, powerWeapon: null };
+
+// Example: Check all the attribute names
+// Object.keys(locust2).forEach((key) => console.log(key));
+
+/*
+Gameplay Mechanic Lens:
+- Think of this as checking which stats or attributes you can interact with: health, DBNO status, power weapon possession.
+- Object.keys helps you plan attacks or support your team by understanding available information.
+*/
+
+// Iterate over an Array of Weapons in a Locust Loadout [For Of]
+const locustLoadout = ["Lancer", "Hammerburst", "Torque Bow"];
+
+/* 
+Syntax Example
+
+for (const weapon of locustLoadout) {
+  console.log(weapon);
+}
+*/
+
+/*
+Gameplay Mechanic Lens:
+- This simulates cycling through weapons held by a Locust player in PvP.
+- For Of lets you evaluate which weapon to use next, whether to shoot, reload, or swap to a power weapon.
+- Mirrors real-time multiplayer decision-making for Locust units.
+*/
