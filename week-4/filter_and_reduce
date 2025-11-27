@@ -15,7 +15,7 @@ const weaponAmmo = [
 
 const filteredWeapons = weaponAmmo
   .filter(grabBigWeapons)
-  .map(grabbedWeaponNames)
+  .map(grabbedWeaponNames).join(', ')
 
 function grabBigWeapons(weapon) {
  return weapon.ammo > 10
