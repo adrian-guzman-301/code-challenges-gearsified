@@ -28,3 +28,4 @@ const weaponLoadout = [
   { name: "Boltok", ammo: 21 },
   { name: "Longshot", ammo: 31 }
 ];
+
