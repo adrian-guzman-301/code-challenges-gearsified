@@ -1,18 +1,21 @@
 /*
-Task 1
-Add a property to each weapon storing its abbreviation (initials) and calculate the sum 
-of all ammo counts to use in the calculation of the average ammo per weapon. 
-Average ammo = total ammo ÷ number of weapons.
+Task 1: Weapon Classification System
+Add a "type" property to each weapon classifying it as "Heavy", "Standard", or "Sidearm" 
+based on its ammo count. Calculate the total firepower (sum of all ammo) in the loadout.
+- Heavy: ammo >= 35
+- Standard: ammo between 25-34
+- Sidearm: ammo < 25
 
-Task 2
-Get an array of all weapons with ammo higher than the average ammo.
+Task 2: High-Capacity Arsenal
+Get an array of all Heavy weapons (ammo >= 35) that are ready for sustained combat.
 
-Task 3
-Get an array of strings listing the weapon initials and ammo.
-Expected output (Weapons Example): [ 'LN: 35', 'GS: 45', 'AE: 38', 'IH: 46' ]
+Task 3: Loadout Report
+Generate a tactical readout showing each weapon's name and ammo in the format:
+Expected output: [ 'Lancer: 27 rounds', 'Gnasher: 35 rounds', 'Boomshot: 22 rounds', ... ]
 
-Bonus
-How you can work programmatically using a function.
+Bonus: Weapon Analyzer
+Create a function that takes a weapon array and ammo threshold, returning weapons 
+above that threshold with their combat effectiveness rating.
 */
 
 // A list of weapons stored as an array of objects
@@ -29,3 +32,26 @@ const weaponLoadout = [
   { name: "Longshot", ammo: 31 }
 ];
 
+// Your code here
+
+// Task 1: Weapon Classification System
+// Add a "type" property to each weapon classifying it as "Heavy", "Standard", or "Sidearm" 
+// based on its ammo count. Calculate the total firepower (sum of all ammo) in the loadout.
+// - Heavy: ammo >= 35
+// - Standard: ammo between 25-34
+// - Sidearm: ammo < 25
+
+function addType() {
+  const result = weaponLoadout.map(item => {
+    if(item.ammo >= 35) {
+      item.type = 'Heavy'
+    } else if(item.ammo > 25 && item.ammo < 34) {
+      item.type = 'Standard'
+    } else {
+      item.type = 'Sidearm'
+    }
+    return item
+  })
+  return result
+}
+console.log(addType())
